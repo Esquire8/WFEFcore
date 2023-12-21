@@ -18,24 +18,18 @@ namespace WFEFcore.DB
             return allIncomes;
         }
 
-        public void AddNewIncome(decimal salary, decimal advancePay)
+        public void AddNewIncome(decimal salary, decimal advancePay, DateTime incomeDate)
         {
             Income income = new Income();
 
             income.Salary = salary;
             income.AdvancePay = advancePay;
+            income.IncomeDate = incomeDate;
 
             using (var context = new ApplicationContext())
             {
-                if(salary == 0 & advancePay == 0)
-                {
-                    MessageBox.Show("Введите сумму!");
-                }
-                else
-                {
-                    context.Add(income);
-                    context.SaveChanges();
-                }
+                context.Add(income);
+                context.SaveChanges();
             }
         }
 

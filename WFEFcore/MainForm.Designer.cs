@@ -48,6 +48,8 @@
             this.настройкиToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.приложениеToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.настройкиToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
+            this.btnUpdate = new System.Windows.Forms.Button();
+            this.закрытьToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             ((System.ComponentModel.ISupportInitialize)(this.dgvIncome)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dgvExpenses)).BeginInit();
             this.groupBox1.SuspendLayout();
@@ -202,7 +204,7 @@
             this.приложениеToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Size = new System.Drawing.Size(1205, 30);
+            this.menuStrip1.Size = new System.Drawing.Size(1205, 28);
             this.menuStrip1.TabIndex = 10;
             this.menuStrip1.Text = "menuStrip1";
             // 
@@ -230,9 +232,10 @@
             // приложениеToolStripMenuItem
             // 
             this.приложениеToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.настройкиToolStripMenuItem1});
+            this.настройкиToolStripMenuItem1,
+            this.закрытьToolStripMenuItem});
             this.приложениеToolStripMenuItem.Name = "приложениеToolStripMenuItem";
-            this.приложениеToolStripMenuItem.Size = new System.Drawing.Size(114, 26);
+            this.приложениеToolStripMenuItem.Size = new System.Drawing.Size(114, 24);
             this.приложениеToolStripMenuItem.Text = "Приложение";
             // 
             // настройкиToolStripMenuItem1
@@ -241,12 +244,30 @@
             this.настройкиToolStripMenuItem1.Size = new System.Drawing.Size(167, 26);
             this.настройкиToolStripMenuItem1.Text = "Настройки";
             // 
+            // btnUpdate
+            // 
+            this.btnUpdate.Location = new System.Drawing.Point(273, 403);
+            this.btnUpdate.Name = "btnUpdate";
+            this.btnUpdate.Size = new System.Drawing.Size(131, 51);
+            this.btnUpdate.TabIndex = 11;
+            this.btnUpdate.Text = "Обновить";
+            this.btnUpdate.UseVisualStyleBackColor = true;
+            this.btnUpdate.Click += new System.EventHandler(this.btnUpdate_Click);
+            // 
+            // закрытьToolStripMenuItem
+            // 
+            this.закрытьToolStripMenuItem.Name = "закрытьToolStripMenuItem";
+            this.закрытьToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
+            this.закрытьToolStripMenuItem.Text = "Закрыть";
+            this.закрытьToolStripMenuItem.Click += new System.EventHandler(this.закрытьToolStripMenuItem_Click);
+            // 
             // MainForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(1205, 574);
+            this.Controls.Add(this.btnUpdate);
             this.Controls.Add(this.groupBoxExpenses);
             this.Controls.Add(this.groupBoxIncome);
             this.Controls.Add(this.groupBox1);
@@ -256,6 +277,7 @@
             this.Name = "MainForm";
             this.ShowIcon = false;
             this.Text = "MainForm";
+            this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.MainForm_FormClosed);
             this.Load += new System.EventHandler(this.MainForm_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dgvIncome)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dgvExpenses)).EndInit();
@@ -292,5 +314,7 @@
         private System.Windows.Forms.ToolStripMenuItem настройкиToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem приложениеToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem настройкиToolStripMenuItem1;
+        private System.Windows.Forms.Button btnUpdate;
+        private System.Windows.Forms.ToolStripMenuItem закрытьToolStripMenuItem;
     }
 }
