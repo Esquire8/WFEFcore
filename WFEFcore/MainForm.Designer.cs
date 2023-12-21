@@ -103,6 +103,7 @@
             this.btnIncome.TabIndex = 4;
             this.btnIncome.Text = "+ Доход";
             this.btnIncome.UseVisualStyleBackColor = true;
+            this.btnIncome.Click += new System.EventHandler(this.btnIncome_Click);
             // 
             // btnExpenses
             // 
@@ -201,7 +202,7 @@
             this.приложениеToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Size = new System.Drawing.Size(1205, 28);
+            this.menuStrip1.Size = new System.Drawing.Size(1205, 30);
             this.menuStrip1.TabIndex = 10;
             this.menuStrip1.Text = "menuStrip1";
             // 
@@ -211,7 +212,7 @@
             this.обАккаунтеToolStripMenuItem,
             this.настройкиToolStripMenuItem});
             this.аккаунтToolStripMenuItem.Name = "аккаунтToolStripMenuItem";
-            this.аккаунтToolStripMenuItem.Size = new System.Drawing.Size(77, 24);
+            this.аккаунтToolStripMenuItem.Size = new System.Drawing.Size(77, 26);
             this.аккаунтToolStripMenuItem.Text = "Аккаунт";
             // 
             // обАккаунтеToolStripMenuItem
@@ -231,7 +232,7 @@
             this.приложениеToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.настройкиToolStripMenuItem1});
             this.приложениеToolStripMenuItem.Name = "приложениеToolStripMenuItem";
-            this.приложениеToolStripMenuItem.Size = new System.Drawing.Size(114, 24);
+            this.приложениеToolStripMenuItem.Size = new System.Drawing.Size(114, 26);
             this.приложениеToolStripMenuItem.Text = "Приложение";
             // 
             // настройкиToolStripMenuItem1

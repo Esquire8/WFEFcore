@@ -90,3 +90,4 @@ E:\_ASP.NET Core\AppsNet\WFEFcore\WFEFcore\bin\Debug\zh-Hant\Microsoft.Data.SqlC
 E:\_ASP.NET Core\AppsNet\WFEFcore\WFEFcore\obj\Debug\WFEFcore.csproj.CopyComplete
 E:\_ASP.NET Core\AppsNet\WFEFcore\WFEFcore\obj\Debug\WFEFcore.Registration.resources
 E:\_ASP.NET Core\AppsNet\WFEFcore\WFEFcore\obj\Debug\WFEFcore.MainForm.resources
+E:\_ASP.NET Core\AppsNet\WFEFcore\WFEFcore\obj\Debug\WFEFcore.AddIncome.resources

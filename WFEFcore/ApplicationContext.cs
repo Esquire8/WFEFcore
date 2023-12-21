@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Linq;
 using Microsoft.EntityFrameworkCore;
+using WFEFcore.DB;
 
 namespace WFEFcore
 {
@@ -14,5 +15,6 @@ namespace WFEFcore
         }
 
         public DbSet<User> users { get; set; }
+        public DbSet<Income> income { get; set; }
     }
 }
